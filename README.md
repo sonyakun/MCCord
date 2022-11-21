@@ -11,6 +11,8 @@ DiscordBotのトークンを所持していること
 ![2](https://docs.discordsrv.com/images/create_bot.png)
 つぎに、Reset Tokenをクリックし、トークンを再生成します。
 再生成したら、次にCopyを押してトークンをコピーします。
-![3](https://docs.discordsrv.com/images/copy_token.png)
+![3](https://docs.discordsrv.com/images/copy_token.png
+次に、少し下のところにあるPrivileged Gateway Intentsをすべてオンにしてください。
+そして保存します。
 そして生成したトークンをmain.pyの「BOTTOKEN」の文字を削除してそこにペーストします。
 これで準備完了です。
