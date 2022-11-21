@@ -46,7 +46,7 @@ class WssClient(py_mcws.WsClient):
         await channel.send(event)
         
     @wss.event
-    async def on_ready
+    async def on_ready()
        logger.info(f'Discordに接続しました。')
      
     @wss.event
