@@ -7,7 +7,7 @@ wss = commands.Bot(intents=intents)
 # MineCord設定
 # 助けが必要？ Discord、sonyakun#6928にご連絡ください。
 # hostとportは基本的に
-host = 0.0.0.0
+host = "0.0.0.0"
 port = 19132
 # Bot token: 取得したトークンはここに設定してください。設定方法は、MineCordの導入手順を参照してください。
 # このオプションを変更した後、プログラムを再接続する必要があります
