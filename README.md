@@ -22,3 +22,8 @@ pip install git+https://github.com/sonyakun/py-mcws.git
 そして保存します。
 そして生成したトークンをmain.pyの「BOTTOKEN」の文字を削除してそこにペーストします。
 これで準備完了です。
+# 追記
+Windowsでhostを0.0.0.0、127.0.0.1やlocalhostなどのローカルループバックアドレスをご利用する場合、以下のコマンドを管理者権限を与えたWindows PowerShellで実行する必要があります。
+```
+CheckNetIsolation.exe LoopbackExempt -a -n="Microsoft.MinecraftUWP_8wekyb3d8bbwe"
+```
