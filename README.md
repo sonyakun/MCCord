@@ -4,6 +4,12 @@ Minecraftのwebsocketを利用したDiscordSRV風のプログラム。
 Git Bashを導入していること
 Python3.10以上を導入していること
 DiscordBotのトークンを所持していること
+# 必要ライブラリ
+nextcord
+https://github.com/sonyakun/py-mcws.git
+インストール方法
+pip install nextcord
+pip install git+https://github.com/sonyakun/py-mcws.git
 # トークン発行&MCCord設定手順(DiscordSRV Wikiより画像を引用)
 まず、https://discord.com/developers/applications/ でアプリケーションを新しく作成します。すでにMineCordを動作させる予定のあるアプリケーションがある場合、そのアプリケーションを利用することも可能です。
 ![1](https://docs.discordsrv.com/images/create_application.png)
