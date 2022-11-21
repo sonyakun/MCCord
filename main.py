@@ -3,9 +3,12 @@ from logging import getLogger
 import nextcord
 from nextcord.ext import commands
 from traceback import TracebackException
-
+wss = commands.Bot(intents=intents)
 # MineCord設定
 # 助けが必要？ Discord、sonyakun#6928にご連絡ください。
+# hostとportは基本的に
+host = 0.0.0.0
+port = 19132
 # Bot token: 取得したトークンはここに設定してください。設定方法は、MineCordの導入手順を参照してください。
 # このオプションを変更した後、プログラムを再接続する必要があります
 BotToken = "BOTTOKEN"
@@ -29,7 +32,6 @@ class WssClient(py_mcws.WsClient):
   logger = getLogger(__name__)
   logging.basicConfig(level=logging.DEBUG)
   intents = discord.Intents.all()
-  wss = commands.Bot(intents=intents)
   def event_ready(self):
     logger.info(f'{self.host}:{self.port}で接続を開始しました')
 
@@ -63,4 +65,6 @@ class WssClient(py_mcws.WsClient):
 
 
     
-      WssClient().wss.run(BotToken)
+WssClient().wss.run(BotToken)
+WssClient().start(host=host, port=port)
+
