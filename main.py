@@ -65,6 +65,6 @@ class WssClient(py_mcws.WsClient):
 
 
     
-WssClient().wss.run(BotToken)
+wss.run(BotToken)
 WssClient().start(host=host, port=port)
 
